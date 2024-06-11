@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="estilos.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <div class="container ">
+    <form action="" method="post" class="formulario">
+      <h1>Contact Us</h1>
+      <div class="campos">
+        <div class="row row-name">
+            <div class="campo campo-name">
+              <label for="">First Name <span class="ast"></span></label>
+              <input type="text" class="form form-name" id="fName" required>
+              <p class="message"></p>
+            </div>
+            <div class="campo campo-name">
+              <label for="">Last Name <span class="ast"></span></label>
+              <input type="text" class="form" id="sName" required>
+              <p class="message"></p>
+            </div>
+        </div>
+        <div class="row row-name">
+          <div class="campo-email">
+            <label for="">Email <span class="ast"></span></label>
+            <input type="email" class="form" id="email" required>
+            <p class="message"></p>
+          </div>
+      </div>
+      <div class="row">
+        <p class="title">Qury Genral <span class="ast"></span></p>
+            <fieldset>
+              <div class="campo campo-form form">
+                <input type="radio" class="radio"/>
+                <label for="" class="radio-post">General Enquiry</label>          
+              </div>
+        
+              <div class="campo campo-form form">
+                  <input type="radio" class="radio"/>
+                  <label for="" class="radio-post">Support Request</label>          
+              </div>
+             
+            </fieldset>
+            <p class="message"></p>
+            
+          </div>
+        
+        
+
+
+      <div class="row">
+        <div class="campo campo-message">
+          <label for="">Message <span class="ast"></span></label>
+          <textarea name="" id="textarea" class="textarea form"></textarea>
+        </div>
+        <p class="message"></p>
+      </div>
+
+      <div class="row">
+        <div class="campo campo-confirm">
+          <input type="checkbox" class="check" id="check">
+          <label for=""><p class="confirm-p">
+           I consent to being contacted by the team
+            To submit this form, please consent to being contacted
+          </p> 
+        </label>
+        <p class="message"></p>
+          
+        </div>
+      </div>
+
+      <input type="submit" class="btn" id="btn" value="Submit">
+        
+      </div>
+    </form>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
