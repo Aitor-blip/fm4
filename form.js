@@ -44,9 +44,9 @@
               fName.classList.add("form__error");
               pMsg1.classList.add("title__error");
               pMsg1.textContent=errorField;    
-              isReady = true;       
+              isReady = false;       
       }else{
-        isReady = false;
+        isReady = true;
         fName.classList.toggle("form__error");
         pMsg1.textContent="";
       }
@@ -60,9 +60,9 @@
         sName.classList.add("form__error");
         pMsg2.classList.add("title__error");
         pMsg2.textContent=errorField;
-        isReady = true;
-      }else{
         isReady = false;
+      }else{
+        isReady = true;
         sName.classList.toggle("form__error");
         pMsg2.textContent="";
       }
@@ -72,14 +72,15 @@
    
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     email.addEventListener("input",(e)=>{
-      if(!(emailRegex.test(e.target.value) && e.target.value=="")){
+      if(emailRegex.test(e.target.value) && e.target.value==""){
         email.classList.add("form__error");
         pMsg3.classList.add("title__error");
         pMsg3.textContent=errorEmail;
-        isReady = true;
-      }else{
         isReady = false;
+      }else{
+        isReady = true;
         email.classList.toggle("form__error");
         pMsg3.textContent="";
       } 
@@ -124,13 +125,13 @@
 
       textArea.addEventListener("input",(e)=>{
         if(e.target.value==""){
-              isReady = true;
+              isReady = false;
               textArea.classList.add("form__error");
               pMsg5.style.margin = "0 2rem";
               pMsg5.classList.add("title__error");
               pMsg5.textContent=errorField;
             }else{
-              isReady = false;
+              isReady = true;
               textArea.classList.toggle("form__error");
               pMsg5.textContent="";
             }
